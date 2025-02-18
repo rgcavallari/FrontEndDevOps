@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Hobby: Música</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 900px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #222;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #555;
+            font-size: 24px;
+            font-weight: 600;
+            border-bottom: 2px solid #ccc;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        ul li {
+            background: #e0e0e0;
+            color: #333;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.3s;
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+        ul li:hover {
+            background: #d0d0d0;
+        }
+        .explanation {
+            display: none;
+            color: #666;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-top: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 160px;
+            height: 120px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            margin-top: 30px;
+            padding: 15px;
+            background: #222;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Meu Mundo Musical</h1>
+        <p>Explore minha paixão pela música e descubra como ela faz parte da minha vida!</p>
+        <p><strong>Gustavo Brandão Schenkel</strong><p>
+        <h2>Minhas Atividades Musicais</h2>
+        <ul>
+            <li onclick="toggleExplanation('guitar')">
+                🎸 Tocar Guitarra
+                <p id="guitar" class="explanation">Comecei a gostar de Guitarra, depois de gostar de vioão, sobre isto quis aprender por conta propria.</p>
+            </li>
+            <li onclick="toggleExplanation('piano')">
+                🎹 Tocar Piano
+                <p id="piano" class="explanation">O piano é um dos meus instrumentos favoritos, permitindo uma conexão profunda com a música, que me faz sentir prazer e entrar em meu mundo.</p>
+            </li>
+            <li onclick="toggleExplanation('singing')">
+                🎤 Tocar Caixa - Samba
+                <p id="singing" class="explanation">A caixa de samba foi algo que nunca achei que iria gostar tanto, comecei a gostar de Caixa, por conta que tocava Maracatu, sobre tudo segui minha vida de sambista.</p>
+            </li>
+            <li onclick="toggleExplanation('composing')">
+                🎼 Tocar Bateria
+                <p id="composing" class="explanation">Tocar bateria foi algo incrivel para mim, foi viver uma nova experiencia, uma nova mudança, e foi ai que decidi fazer aula por gosto, por diversão, por interesses grandes.</p>
+            </li>
+            <li onclick="toggleExplanation('production')">
+                🎧 Ouvir Musica
+                <p id="production" class="explanation">Ouvir musica sempre foi algo, que me fez entrar no meu mundo de imaginação, e me sentir calmo e um lugar de paz.</p>
+            </li>
+        </ul>
+        
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <img src="https://thumbs.dreamstime.com/b/fundo-da-guitarra-ac%C3%BAstica-composi%C3%A7%C3%A3o-quadrada-85657960.jpg" alt="Guitarra">
+            <img src="https://64.media.tumblr.com/51b661a23b8f4a0c1f6fe5b46f94f81e/tumblr_paz6nmXyqp1x3kgo6o1_540.jpg" alt="Piano">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Caixa_de_samba.JPG/1200px-Caixa_de_samba.JPG" alt="Samba">
+            <img src="https://img.freepik.com/fotos-gratis/imagem-conceitual-de-bateria_1204-202.jpg" alt="Beteria">
+            <img src="https://www.papeldeparede.etc.br/fotos/wp-content/uploads/musica--fone-de-ouvido_6977_1280x1024.jpg" alt="Ouvir Musica">
+        </div>
+        
+        <h2>Sobre Mim</h2>
+        <p>- Aqui estou contando minha paixão e meu hobbie principal -  como não ira dar tempo de contar tudo sobre mim!
+        <p>- A música é minha maior paixão. Desde o inicio eu gosto de musica, comecei aos meus 6 anos de idade fazer aula de musica na escola de musica de jundiai, depois com o tempo, fiz aula de Piano, depois fui para aula de Violão, e com minha paixão, quis tentar criar expectativa de iniciar aula de Guitarra, mais como tive ideias de começar dois intrumentos ao mesmo tempo, decidi ficar só na Bateria. Desde sempre me dou bem com percusão. Sobre minha vida de sambista, foi uma paixão que tive ao conhecer a começar a tocar Maracatu, depois de passar com o tempo comecei a tocar na Escola União Vila Rio Branco, depois de um tempo parado comecei a tocar de novo, e fui para o Bloco Azul e Branco, e aqui estou revivendo um sonho, e uma aventura nova</p>
+    </div>
+    <div class="footer">&copy; 2025 Meu Hobby: Música. Todos os direitos reservados.</div>
+
+    <script>
+        function toggleExplanation(id) {
+            const explanation = document.getElementById(id);
+            explanation.style.display = explanation.style.display === 'none' || explanation.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
