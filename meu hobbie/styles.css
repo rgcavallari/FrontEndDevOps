@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-flex;
+    margin-right: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+section {
+    padding: 20px;
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+.sobre{
+    background-color: black;
+    color: #fff;
+}
+.contato{
+    background-color: red;
+    color: #fff;
+}
+.servicos{
+    background-color: red;
+    color: #fff;
+}
+input[type="email"]{
+    border: 5px solid black;
+}
