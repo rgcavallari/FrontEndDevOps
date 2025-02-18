@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+
+header {
+    background-color: #F5F5DC;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Sofia", sans-serif;
+}
+
+.poema {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.poema h2 {
+    color: #2c3e50;
+}
+
+.poema img {
+    display: block;
+    width: 90%; /* A imagem ocupará 90% da largura disponível */
+    max-width: 800px; /* Limita o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 10px auto; /* Centraliza a imagem e adiciona uma margem acima e abaixo */
+    border-radius: 10px;
+    object-fit: cover; /* Preenche o espaço da imagem sem distorção */
+}
+
+.footer {
+    background-color: #F5F5DC;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
