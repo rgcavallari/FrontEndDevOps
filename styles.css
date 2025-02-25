@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #eceaeb;
+    text-align: center;
+}
+
+header {
+    background: #550101;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(3, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(14, 13, 13, 0.1);
+}
+
+.hobby {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 5px solid #f0e8e8;
+    background: #550101;
+    border-radius: 5px;
+}
+
+.tag {
+    display: inline-block;
+    background: #550101;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.image {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.another-image {
+    width: 400px;
+    height: auto;
+}
+
+.mahoutsukai-image {
+    width: 400px;
+    height: auto;
+}
+
+.rakudai-image {
+    width: 400px;
+    height: auto;
+}
+    
+.kamisama-image {
+    width: 400px;
+    height: auto;
+}
+
+.tensei-image {
+    width: 400px;
+    height: auto;
+}
+
+.sleeping-image {
+    width: 400px;
+    height: auto;
+}
+
+.vincezo {
+    width: 500px;
+    height: auto;
+}
+
+.w {
+    width: 200px;
+    height: auto;
+}
