@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas - Matriz de Eisenhower</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Matriz de Eisenhower</h1>
+
+        <!-- Formulário para adicionar novas tarefas -->
+        <div class="form-container">
+            <input type="text" id="task-input" placeholder="Digite uma tarefa..." />
+            <select id="priority-input">
+                <option value="urgent-important">Urgente e Importante</option>
+                <option value="not-urgent-important">Não Urgente e Importante</option>
+                <option value="urgent-not-important">Urgente e Não Importante</option>
+                <option value="not-urgent-not-important">Não Urgente e Não Importante</option>
+            </select>
+            <button id="add-task">Adicionar Tarefa</button>
+        </div>
+
+        <!-- Matriz de Eisenhower -->
+        <div class="matrix">
+            <div class="quadrant" id="urgent-important">
+                <h2>Urgente e Importante</h2>
+                <ul id="urgent-important-list"></ul>
+            </div>
+            <div class="quadrant" id="not-urgent-important">
+                <h2>Não Urgente e Importante</h2>
+                <ul id="not-urgent-important-list"></ul>
+            </div>
+            <div class="quadrant" id="urgent-not-important">
+                <h2>Urgente e Não Importante</h2>
+                <ul id="urgent-not-important-list"></ul>
+            </div>
+            <div class="quadrant" id="not-urgent-not-important">
+                <h2>Não Urgente e Não Importante</h2>
+                <ul id="not-urgent-not-important-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
